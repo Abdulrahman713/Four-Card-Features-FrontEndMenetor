@@ -1,0 +1,150 @@
+/* Start Variables */
+:root {
+    --red-color: hsl(0, 78%, 62%);
+    --cyan-color: hsl(180, 62%, 55%);
+    --orange-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+    --Darkblue-color: hsl(234, 12%, 34%);
+    --otherblue-color: hsl(229, 6%, 66%);
+    --Gray-color: hsl(0, 0%, 98%);
+}
+/* End Variables */
+/* Start GLobal Rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50px;
+    left: 8%;
+}
+/* Small Screens */
+@media (min-width: 769px) {
+    .container {
+        width: 700px ;
+    }
+}
+/* Medium Screens */
+@media (min-width: 992px) {
+    .container {
+        width: 950px ;
+    }
+}
+/* Large Width */
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px ;
+    }
+}
+/* X Large Width */
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px ;
+    }
+}
+/* End GLobal Rules */
+/* Start Hedder */
+.hedding {
+    margin-left: auto;
+    margin-right: auto;
+    width: 475px;
+    text-align: center;
+}
+.hedding h1.first-hedding {
+    font-weight: 200;
+    color: var(--Darkblue-color);
+    margin-bottom: -5px;
+    font-size: 35px;
+}
+.hedding h1.second-hedding {
+    color: var(--Darkblue-color);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.hedding p {
+    color: var(--Darkblue-color);
+    margin-bottom: 50px;
+}
+@media (max-width: 600px) {
+    .hedding h1 {
+        font-size: 30px !important;
+    }
+    .hedding p {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 375px) {
+    .hedding h1 {
+        font-size: 20px !important;
+        width: 350px;
+        position: relative;
+        right: 45px;
+    }
+    .hedding p {
+        width: 300px;
+        position: relative;
+        right: 22%;
+    }
+}
+/* End Hedder */
+/* Start Cards */
+.cards {
+    position: relative;
+    margin-top: -100px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 350px;
+    height: 250px;
+    padding: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+.second-card {
+    position: relative;
+    left: 355px;
+    top: 105px;
+    border-top: 3px solid var(--red-color);
+}
+.forth-card {
+    position: relative;
+    left: 355px;
+    bottom: 105px;
+    border-top: 3px solid var(--orange-color);
+}
+.first-card {
+    border-top: 3px solid var(--cyan-color);
+    margin-right: -10px;
+}
+.third-card {
+    border-top: 3px solid var(--blue-color);
+    margin-right: -10px;
+}
+.card .head {
+    font-size: 20px;
+    color: var(--Darkblue-color);
+    margin-bottom: 10px;
+}
+.card p {
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.card .img {
+    text-align: end;
+}
+/* End Cards */
